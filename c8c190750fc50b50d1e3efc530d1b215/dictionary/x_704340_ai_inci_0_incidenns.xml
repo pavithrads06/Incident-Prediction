@@ -7,6 +7,7 @@
         <element label="Resolution Suggestion" max_length="40" name="resolution_suggestion" type="string"/>
         <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Comments" max_length="40" name="comments" type="string"/>
         <element label="Confidence Score" max_length="38" name="confidence_score" type="decimal"/>
         <index name="index">
             <element name="incident"/>
