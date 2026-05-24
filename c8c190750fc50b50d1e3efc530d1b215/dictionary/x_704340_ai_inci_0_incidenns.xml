@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="ab7454f90fc50b50d1e3efc530d1b298" label="Incident Predictions" max_length="40" name="x_704340_ai_inci_0_incidenns" type="collection">
+        <element label="Predicted Assignment Group" max_length="32" name="predicted_assignment_group" reference="sys_user_group" type="reference"/>
+        <element label="Prediction Date" max_length="40" name="prediction_date" type="glide_date_time"/>
+        <element label="Incident" max_length="32" name="incident" reference="incident" type="reference"/>
+        <element label="Predicted Category" max_length="40" name="predicted_category" type="string"/>
+        <element label="Resolution Suggestion" max_length="40" name="resolution_suggestion" type="string"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Confidence Score" max_length="38" name="confidence_score" type="decimal"/>
+        <index name="index">
+            <element name="incident"/>
+        </index>
+        <index name="index2">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>
